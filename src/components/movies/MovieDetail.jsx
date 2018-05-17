@@ -1,5 +1,4 @@
 import React from 'react';
-import {SampleMovies} from '../../sample-movies';
 
 class MovieDetail extends React.Component{
     state={
@@ -7,7 +6,7 @@ class MovieDetail extends React.Component{
     }
 
     render(){
-        const {id, title, poster, synopsis, genres, year, director, actors} = this.state.movie;
+        const {title, poster, synopsis, genres, year, director, actors} = this.state.movie;
         return(
             <div>
                 <img src={poster} alt=""/>

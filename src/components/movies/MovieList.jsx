@@ -1,8 +1,6 @@
 import React, {Component} from 'react';
 import {Movie} from './Movie';
 
-import toastr from 'toastr';
-
 import {SampleMovies} from '../../sample-movies';
 
 class MovieList extends Component{
@@ -14,9 +12,9 @@ class MovieList extends Component{
         return(
             <div>
                 <div style={styles.conFlex}>
-                    {this.state.movies.map(m=>{
+                    {this.state.movies.map(movie=>{
                         return(
-                            <Movie key={m.id} {...m}/>
+                            <Movie key={movie.id} movie={movie} {...movie}/>
                         );
                     })}
                 </div>

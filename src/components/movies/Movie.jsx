@@ -1,7 +1,6 @@
 import React from 'react';
 //paper?
 import {Link} from 'react-router-dom';
-import {SampleMovies} from '../../sample-movies';
 
 export const Movie = ({id, title, poster}) =>{
     return(
